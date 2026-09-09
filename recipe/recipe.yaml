@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.1.1"
+  version: "0.1.2"
 
 package:
   name: servicex-mcp
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/servicex_mcp/servicex_mcp-${{ version }}.tar.gz
-  sha256: 8ca9f5f24e33688ba6d454194ac319344c5304ef1ab2b1d1916c8b20271b8336
+  sha256: 170111b6a7d1ef112f2e296f28344745653545dc0f6ce00c4b1d8bd28921f6f0
 
 build:
   number: 0
@@ -33,6 +33,7 @@ requirements:
     - servicex >=3.3.0
     - starlette >=0.27
     - uvicorn >=0.31.1
+    - af-credentials >=0.3.1
 
 tests:
   - python:
